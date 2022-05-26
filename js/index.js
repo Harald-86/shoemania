@@ -4,7 +4,7 @@ import { searchProducts } from "./searchProducts.js";
 import { createMenuIndex } from "./components/common/createMenu.js";
 
 createMenuIndex();
-const productsUrl = baseUrl + "products";
+const productsUrl = baseUrl + "products?populate=*";
 (async function () {
   try {
     const response = await fetch(productsUrl);
