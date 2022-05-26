@@ -1,0 +1,14 @@
+.product-row {
+  margin-top: 2rem !important;
+}
+
+.featured-section {
+  @include section-space(20px);
+}
+
+.copy-box {
+  display: flex;
+  flex-wrap: wrap;
+  @include border;
+  @include box-shadow;
+}

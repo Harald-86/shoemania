@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
+
+body {
+  font-family: "roboto", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+.product-banner-heading {
+  @include headings;
+  @include heading-shadow;
+  color: $copy-primary;
+}
+
+#main-heading {
+  font-family: "Libre Barcode 39 Text", cursive;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 6rem;
+}
+
+/*Brand/Logo*/
+
+#large-brand {
+  text-align: center;
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 1px #d3d3d3;
+
+  span {
+    color: red; /* change to correct color*/
+  }
+}
+
+#large-brand a {
+  text-decoration: none !important;
+  color: rgb(54, 54, 54);
+}
+
+.small-brand {
+  display: none;
+}
+.product-banner {
+  text-decoration: none;
+}
+
+.product-banner-heading {
+  font-size: 8rem;
+  color: $copy-secondary;
+}
+
+footer {
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 1.2rem;
+    }
+  }
+
+  a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(218, 218, 218);
+  }
+  h3 {
+    text-decoration: underline $green-primary;
+    color: $copy-primary;
+  }
+}
+
+.copy-box {
+  color: $copy-primary;
+  h5,
+  h4 {
+    text-decoration: underline $green-primary;
+    @include heading-shadow;
+  }
+}
+
+.success {
+  border: 1px solid $green-primary;
+  text-align: center;
+  padding: 1rem;
+}
+
+.warning {
+  border: 2px solid red;
+  text-align: center;
+  padding: 1rem;
+}

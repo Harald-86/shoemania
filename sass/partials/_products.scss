@@ -1,0 +1,25 @@
+.item-in-cart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.cart-thumbnail {
+  width: 150px;
+  height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 5px grey);
+  padding: 0.5rem;
+}
+
+.cart-remove {
+  margin: 1rem;
+}
+
+.search-products {
+  margin-bottom: 1rem;
+}

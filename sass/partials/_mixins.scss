@@ -1,0 +1,25 @@
+@mixin box-shadow {
+  box-shadow: 5px 5px 4px 0px rgba(19, 19, 19, 0.21);
+}
+@mixin hover-box-shadow {
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@mixin section-space($top) {
+  margin-top: $top !important;
+}
+
+@mixin heading-shadow {
+  text-shadow: 3px 2px 2px rgba(19, 19, 19, 0.21);
+}
+
+@mixin headings {
+  font-family: $headings-font-family;
+  color: $heading-primary;
+  font-weight: 600 !important;
+}
+
+@mixin border {
+  border: 1px solid $copy-secondary;
+  border-radius: $border-radius;
+}
