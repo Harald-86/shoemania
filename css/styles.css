@@ -72,7 +72,7 @@ footer .footer-box .shoemania-logo {
 }
 
 .hero-section {
-  background-image: url(http://localhost:1337/uploads/large_jakob_owens_Jz_J_Syb_P_Fb3s_unsplash_0840f6de0c.jpg);
+  background-image: url(https://res.cloudinary.com/dablhxjwo/image/upload/v1653600275/jakob_owens_Jz_J_Syb_P_Fb3s_unsplash_0840f6de0c_d55e50aa57.jpg);
   width: 500px;
   aspect-ratio: 16/9;
   background-position-y: bottom;
@@ -5937,9 +5937,6 @@ fieldset:disabled .btn {
   border-radius: 0;
 }
 
-/* @import "../bootstrap-scss/breadcrumb";
-@import "../bootstrap-scss/pagination";
-@import "../bootstrap-scss/badge"; */
 .alert {
   position: relative;
   padding: 1rem 1rem;
@@ -6509,18 +6506,13 @@ fieldset:disabled .btn {
   border-color: #141619;
 }
 
-/* @import "../bootstrap-scss/close";
-@import "../bootstrap-scss/toasts";
-@import "../bootstrap-scss/modal";
-@import "../bootstrap-scss/tooltip";
-@import "../bootstrap-scss/popover";
-@import "../bootstrap-scss/carousel"; */
 @-webkit-keyframes spinner-border {
   to {
     -webkit-transform: rotate(360deg) /* rtl:ignore */;
             transform: rotate(360deg) /* rtl:ignore */;
   }
 }
+
 @keyframes spinner-border {
   to {
     -webkit-transform: rotate(360deg) /* rtl:ignore */;
@@ -6595,8 +6587,6 @@ fieldset:disabled .btn {
   }
 }
 
-/* @import "../bootstrap-scss/offcanvas"; */
-/* @import "../bootstrap-scss/placeholders"; */
 .clearfix::after {
   display: block;
   clear: both;

@@ -8,9 +8,10 @@ export function searchProducts(result) {
     const searchValue = event.target.value.trim().toLowerCase();
 
     for (let i = 0; i < result.data.length; i++) {
-      console.log(result.data[i].attributes.title);
-      const filterProducts = result.data[i].attributes.title.filter(function (result) {
-        if (result.data[i].attributes.title.toLowerCase().startsWith(searchValue)) {
+      console.log(result.data[i]);
+
+      const filterProducts = result[i].filter(function (prodResult) {
+        if (prodResult.data.attributes.title.toLowerCase().startsWith(searchValue)) {
           return true;
         }
       });
