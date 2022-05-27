@@ -2,7 +2,7 @@ import { getExistingCart } from "../utils/cartFunction.js";
 
 export function addtocart() {
   const buyProduct = document.querySelectorAll(".buy");
-  console.log(buyProduct);
+  /*  console.log(buyProduct); */
 
   buyProduct.forEach((buy) => {
     buy.addEventListener("click", handleClick);
