@@ -37,7 +37,7 @@ logout();
     editFeatured.value = editResult.data.attributes.featured;
     idInput.value = editResult.data.id;
 
-    deleteButton(editResult.id);
+    deleteButton(editResult.data.id);
   } catch (error) {
     console.log(error);
   }
