@@ -3,17 +3,16 @@ import { addtocart } from "../utils/addToCart.js";
 const detailContainer = document.querySelector(".detail-container");
 
 export function renderProductCard(result) {
-  for (let i = 0; i < result.data.length; i++) {}
-  console.log(result.data.attributes);
+  console.log(result.data.attributes.image_url);
   detailContainer.innerHTML = `
   <div class="row">
   <div class="col-12 col-sm-6 col-md-6 detail-img-container">
-  
+  <img src="${result.data.attributes.image_url}" class="img-fluid detail-img">  
   </div>  
-  <div class="col-12 col-sm-6 col-md-6">  
+  <div class="col-12 col-sm-6 col-md-6">
   <h2>${result.data.attributes.title}</h2>
   <p>Price: $ ${result.data.attributes.price}</p>
-  <button class="btn btn-primary buy" data-id="${result.data.id}" data-name="${result.data.attributes.title}" data-price="${result.data.attributes.price}">Add to cart</button>
+  <button class="btn btn-primary buy" data-id="${result.data.id}" data-name="${result.data.attributes.title}" data-price="${result.data.attributes.price}"data-thumbnail="${result.data.attributes.image_url}">Add to cart</button>
   <a href="../cart.html"><button class="btn btn-primary">Your cart</button></a>
   <div class="accordion" id="accordionExample">
   <div class="accordion-item">

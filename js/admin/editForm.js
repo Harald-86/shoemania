@@ -29,13 +29,13 @@ logout();
   try {
     const editResponse = await fetch(editUrl);
     const editResult = await editResponse.json();
-    console.log(editResult);
+    console.log(editResult.data.id);
 
-    editTitle.value = editResult.title;
-    editPrice.value = editResult.price;
-    editDescription.value = editResult.description;
-    editFeatured.value = editResult.featured;
-    idInput.value = editResult.id;
+    editTitle.value = editResult.data.attributes.title;
+    editPrice.value = editResult.data.attributes.price;
+    editDescription.value = editResult.data.attributes.description;
+    editFeatured.value = editResult.data.attributes.featured;
+    idInput.value = editResult.data.id;
 
     deleteButton(editResult.id);
   } catch (error) {

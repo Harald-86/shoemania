@@ -13,11 +13,12 @@ createMenu();
     const updateResult = await updateResponse.json();
     console.log(updateResult);
 
-    updateResult.forEach(function (editProd) {
+    updateResult.data.forEach(function (editProd) {
+      console.log(editProd.attributes.title);
       updateProduct.innerHTML += `
       <a href="editForm.html?id=${editProd.id}" class="edit-container">
-      <img src="http://localhost:1337${editProd.image.url}" class="edit-img-thumbnail">
-      <h3>${editProd.title}</h3>
+      <img src="${editProd.attributes.image_url}" class="edit-img-thumbnail">
+      <h3>${editProd.attributes.title}</h3>
         </div>
         `;
     });

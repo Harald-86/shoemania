@@ -14,11 +14,11 @@ export function generateCart() {
   }
 
   myCart.forEach((shoppingCart) => {
+    console.log(shoppingCart.thumbnail);
     myShoppingCart.innerHTML += `
-    
     <div class="item-in-cart">
     <a href="details.html?id=${shoppingCart.id}" >
-    <img src="http://localhost:1337${shoppingCart.thumbnail}" alt="product image added to the cart" class="cart-thumbnail">
+    <img src="${shoppingCart.thumbnail}" alt="product image added to the cart" class="cart-thumbnail">
     </a>
     <h4 class="cart-name">${shoppingCart.name}</h4>
     <p class="cart-price">Price: $${shoppingCart.price}</p>

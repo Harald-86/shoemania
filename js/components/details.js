@@ -8,7 +8,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = baseUrl + "products/" + id + "?populate=";
+const url = baseUrl + "products/" + id;
 
 async function renderProduct() {
   try {
