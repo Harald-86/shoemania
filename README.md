@@ -1,5 +1,7 @@
 To do list!
 
+FIX fetching img for products
+
 index.html
 
 product.html

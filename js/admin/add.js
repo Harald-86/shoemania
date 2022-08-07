@@ -68,9 +68,10 @@ async function addProduct(title, price, description, featured) {
     const addJson = await addResponse.json();
     console.log(addJson);
 
-    if (addJson.created_at) {
+    if (addJson.data.attributes.createdAt) {
       displayMessage("success", "Product added to store", ".message-container");
       form.reset();
+      console.log("success");
     }
   } catch (error) {
     displayMessage("warning", "Ops something went wrong", ".message-container");

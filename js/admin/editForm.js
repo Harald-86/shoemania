@@ -98,7 +98,7 @@ async function updateProduct(title, price, description, featured, id) {
     const response = await fetch(url, option);
     const result = await response.json();
     console.log(result);
-    if (result.created_at) {
+    if (result.data.attributes.createdAt) {
       displayMessage("success", "Product updated", ".message-container");
     }
   } catch (error) {
