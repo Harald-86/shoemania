@@ -2,7 +2,7 @@
 
 ![image](shoemania.png)
 
-This is a Copy of my Semester Project 2 i did at Noroff. (The original project used a local API, this one has a live API)
+This is a Copy of my Semester Project 2 i did at Noroff. (The original project used a local API, this one has a hosted API)
 
 ## Description
 
