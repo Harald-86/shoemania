@@ -1,4 +1,4 @@
-# ShoeManie | Semester Project 2 | Noroff
+# ShoeMania | Semester Project 2 | E-commerce
 
 ![image](shoemania.png)
 
