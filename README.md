@@ -1,4 +1,4 @@
-# Your project title
+# ShoeManie | Semester Project 2 | Noroff
 
 ![image](shoemania.png)
 
