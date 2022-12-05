@@ -24,7 +24,8 @@ Products page
 
 
 Details page
-This page is reached by a user clicking on a prudct on the pruct list page.
+
+"This page is reached by a user clicking on a product on the product list page."
 
 - title, description, image, price
 - an add to cart button, this will toggle the product in and out of a cart array stored in local storage.
